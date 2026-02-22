@@ -248,6 +248,10 @@ button, a, .nav-tab, .filter-btn, .page-btn, .practice-card { touch-action: mani
   /* Pagination — bigger touch targets */
   .pagination { gap: 2px; padding: 12px 8px; flex-wrap: wrap; }
   .page-btn { min-width: 40px; min-height: 40px; display: flex; align-items: center; justify-content: center; font-size: 14px; }
+
+  /* Login — mobile friendly */
+  .login-card { padding: 28px 24px; }
+  .login-btn { min-height: 48px; font-size: 16px; }
 }
 
 /* ============= PHONE (480px) ============= */
@@ -289,6 +293,10 @@ button, a, .nav-tab, .filter-btn, .page-btn, .practice-card { touch-action: mani
   .dashboard { padding: 8px; gap: 8px; grid-template-columns: 1fr 1fr; }
   .stat-card .value { font-size: 22px; }
   .stat-card { padding: 12px; }
+
+  /* Login — small phone */
+  .login-card { padding: 24px 20px; }
+  .login-card .login-sub { margin-bottom: 20px; }
 }
 
 /* Loading */
@@ -309,13 +317,13 @@ button, a, .nav-tab, .filter-btn, .page-btn, .practice-card { touch-action: mani
 .export-btn:hover { opacity: 0.9; }
 
 /* Login screen */
-.login-screen { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: var(--primary); display: flex; align-items: center; justify-content: center; z-index: 9999; }
-.login-card { background: white; border-radius: 16px; padding: 40px; width: 380px; max-width: 90vw; box-shadow: 0 20px 60px rgba(0,0,0,0.3); }
+.login-screen { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: var(--primary); display: flex; align-items: center; justify-content: center; z-index: 9999; overflow-y: auto; -webkit-overflow-scrolling: touch; padding: 20px; }
+.login-card { background: white; border-radius: 16px; padding: 40px; width: 380px; max-width: 90vw; box-shadow: 0 20px 60px rgba(0,0,0,0.3); flex-shrink: 0; }
 .login-card h1 { font-size: 22px; font-weight: 700; color: var(--primary); margin-bottom: 4px; }
 .login-card h1 span { color: var(--accent); }
 .login-card .login-sub { font-size: 13px; color: var(--muted); margin-bottom: 28px; }
 .login-card label { display: block; font-size: 13px; font-weight: 600; color: var(--text); margin-bottom: 6px; }
-.login-card input { width: 100%; padding: 12px 14px; border: 2px solid var(--border); border-radius: 8px; font-size: 15px; font-family: inherit; outline: none; margin-bottom: 16px; transition: border-color 0.2s; }
+.login-card input { width: 100%; padding: 12px 14px; border: 2px solid var(--border); border-radius: 8px; font-size: 16px; font-family: inherit; outline: none; margin-bottom: 16px; transition: border-color 0.2s; }
 .login-card input:focus { border-color: var(--accent); }
 .login-btn { width: 100%; padding: 14px; background: var(--accent); color: white; border: none; border-radius: 8px; font-size: 15px; font-weight: 600; cursor: pointer; font-family: inherit; transition: background 0.2s; }
 .login-btn:hover { background: #d63850; }
